@@ -1,0 +1,97 @@
+/* Updated CSS with Neon Cyberpunk Theme */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0a0a0a;
+    color: white;
+    overflow-x: hidden;
+}
+
+.animated-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.9) 0%, rgba(10, 10, 10, 1) 100%);
+    z-index: -1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #00eaff;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #00eaff, #ff00ff);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.1);
+}
+
+.profile-container {
+    text-align: center;
+    margin-top: 100px;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #00eaff;
+    box-shadow: 0 0 20px #00eaff;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 15px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #aaa;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
